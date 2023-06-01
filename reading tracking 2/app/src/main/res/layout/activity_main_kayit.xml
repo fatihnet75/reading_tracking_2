@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainKayit">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="458dp"
+        android:layout_height="831dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/kit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="11dp"
+        android:text="Kayıt olmakiçin bilgileri eksiksiz doldurunuz"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kayitKullaniciAdi"
+        android:layout_width="275dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/account"
+        android:ems="10"
+        android:hint="Kullanıcı Adı Belirleyiniz"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/KayitParola"
+        android:layout_width="276dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:hint="Parola Belirleyiniz"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/kayitKullaniciAdi"
+        app:layout_constraintTop_toBottomOf="@+id/kayitKullaniciAdi" />
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/buttonarkaplan"
+        android:onClick="kayitOl"
+        android:text="Kayıt Ol"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/KayitParola"
+        app:layout_constraintTop_toBottomOf="@+id/KayitParola" />
+
+    <Button
+        android:id="@+id/girisDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/buttonarkaplan"
+        android:onClick="girisDon"
+        android:text="Geri Dön"
+        android:textSize="19sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/kayitOl"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

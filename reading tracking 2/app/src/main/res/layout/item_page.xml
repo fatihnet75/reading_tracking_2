@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="458dp"
+        android:layout_height="831dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kit"
+         />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+
+        <ImageView
+            android:id="@+id/kitapResmi"
+            android:layout_width="125dp"
+            android:layout_height="151dp"
+            app:srcCompat="@drawable/kit" />
+
+
+        <TextView
+            android:id="@+id/kitapBaslik"
+            android:layout_width="322dp"
+            android:layout_height="65dp"
+            android:text="baslık"
+            android:textAlignment="center"
+            android:textColor="#F6F6F6"
+            android:textColorHighlight="#D10000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kitapResmi"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/yazar"
+            android:layout_width="316dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kitapResmi"
+            app:layout_constraintTop_toBottomOf="@+id/kitapBaslik" />
+
+        <TextView
+            android:id="@+id/yayin"
+            android:layout_width="317dp"
+            android:layout_height="27dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kitapResmi"
+            app:layout_constraintTop_toBottomOf="@+id/yazar" />
+
+        <TextView
+            android:id="@+id/fiyat"
+            android:layout_width="313dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kitapResmi"
+            app:layout_constraintTop_toBottomOf="@+id/yayin" />
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="442dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiyat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

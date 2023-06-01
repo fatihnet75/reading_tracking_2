@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGiris">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="458dp"
+        android:layout_height="831dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:srcCompat="@drawable/kit"
+        tools:layout_editor_absoluteX="-37dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:text="Kullanıcı parola"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Devam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="372dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="Kullanıcı adı"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="375dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Bilgileri eksşksiz doldurdoğunuz için Teşekkür ederiz"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/KayıtliKullaniciler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/buttonarkaplan"
+        android:onClick="KayıtliKullaniciler"
+        android:text="Kayıtlı Kullanıcılar"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Devam" />
+
+    <Button
+        android:id="@+id/Devam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/buttonarkaplan"
+        android:onClick="Devam"
+        android:text="Devam"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/KayıtliKullaniciler"
+        app:layout_constraintEnd_toEndOf="@+id/KayıtliKullaniciler"
+        app:layout_constraintStart_toStartOf="@+id/KayıtliKullaniciler"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
